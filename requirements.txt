@@ -7,4 +7,4 @@ keras
 tensorflow
 pandas
 numpy
-opencv
+opencv-python
