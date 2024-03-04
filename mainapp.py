@@ -58,7 +58,7 @@ def main():
             # Generate a unique filename
             filename = str(uuid.uuid4()) + ".jpg"
             # Define the path where you want to save the image
-            save_path = "images/Webcam"
+            save_path = "./images/Webcam"
             os.makedirs(save_path, exist_ok=True)  # Create the folder if it doesn't exist
 
             # Save the image to the specified folder with the unique filename
@@ -112,7 +112,7 @@ def main():
             # Generate a unique filename
             filename = str(uuid.uuid4()) + ".jpg"
             # Define the path where you want to save the image
-            save_path = "images/Uploaded"
+            save_path = "./images/Uploaded"
             os.makedirs(save_path, exist_ok=True)  # Create the folder if it doesn't exist
 
             # Save the image to the specified folder with the unique filename
