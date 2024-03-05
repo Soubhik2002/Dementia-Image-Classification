@@ -6,7 +6,8 @@ from keras.models import load_model
 import os
 import uuid
 from streamlit_gsheets import GSheetsConnection
-from pydrive.auth import GoogleAuth, ServiceAccountAuth
+from pydrive.auth import GoogleAuth
+from oauth2client.service_account import ServiceAccountCredentials
 from pydrive.drive import GoogleDrive
 from io import BytesIO
 
