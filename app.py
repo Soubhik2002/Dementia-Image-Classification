@@ -47,6 +47,11 @@ def predict(image):
 def authenticate_drive():
 
     creds_path = "./client_secrets.json"
+    credentials = service_account.Credentials(
+        client_email='dementia-data-store@dementia-416102.iam.gserviceaccount.com',
+        token_uri='https://oauth2.googleapis.com/token'
+        # Add other required fields as needed
+    )
 
     # gauth = GoogleAuth(creds_path='./client_secrets.json')
     # gauth.LocalWebserverAuth() # Creates local webserver and auto handles authentication.
