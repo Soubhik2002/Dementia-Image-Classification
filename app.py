@@ -49,7 +49,7 @@ def authenticate_drive():
     # gauth.LocalWebserverAuth() # Creates local webserver and auto handles authentication.
     # drive = GoogleDrive(gauth)
     # return drive
-    gauth = GoogleAuth()
+    gauth = GoogleAuth(creds_path='./client_secrets.json')
     gauth.auth_method = 'service'
     gauth.credentials = service_account(filename=creds_path, gauth=gauth)
     # gauth.credentials = ServiceAccountCredentials(filename=creds_path, gauth=gauth)
