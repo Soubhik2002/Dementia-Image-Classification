@@ -8,6 +8,7 @@ import uuid
 from streamlit_gsheets import GSheetsConnection
 from pydrive.auth import GoogleAuth
 from oauth2client.service_account import ServiceAccountCredentials
+from google.oauth2 import service_account
 from pydrive.drive import GoogleDrive
 from io import BytesIO
 
