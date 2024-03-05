@@ -51,8 +51,8 @@ def authenticate_drive():
     # return drive
     gauth = GoogleAuth()
     gauth.auth_method = 'service'
-    # gauth.credentials = ServiceAccountAuth(filename=creds_path, gauth=gauth)
-    gauth.credentials = ServiceAccountCredentials(filename=creds_path, gauth=gauth)
+    gauth.credentials = service_account(filename=creds_path, gauth=gauth)
+    # gauth.credentials = ServiceAccountCredentials(filename=creds_path, gauth=gauth)
     gauth.LocalWebserverAuth()
     drive = GoogleDrive(gauth)
     return drive
