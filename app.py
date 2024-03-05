@@ -44,12 +44,12 @@ def predict(image):
     return prediction
 
 # Authenticate and create PyDrive client
-def authenticate_drive():
+def authenticate_drive(creds_path='./client_secrets.json'):
     # gauth = GoogleAuth(creds_path='./client_secrets.json')
     # gauth.LocalWebserverAuth() # Creates local webserver and auto handles authentication.
     # drive = GoogleDrive(gauth)
     # return drive
-    gauth = GoogleAuth(creds_path='./client_secrets.json')
+    gauth = GoogleAuth()
     gauth.auth_method = 'service'
     gauth.credentials = service_account(filename=creds_path, gauth=gauth)
     # gauth.credentials = ServiceAccountCredentials(filename=creds_path, gauth=gauth)
